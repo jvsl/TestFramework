@@ -10,6 +10,7 @@
 		AB5A91C821EF9DB60000799B /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5A91BE21EF9DB50000799B /* TestFramework.framework */; };
 		AB5A91CD21EF9DB60000799B /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A91CC21EF9DB60000799B /* TestFrameworkTests.swift */; };
 		AB5A91CF21EF9DB60000799B /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5A91C121EF9DB50000799B /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB5A91DA21EF9EC00000799B /* TestFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A91D921EF9EC00000799B /* TestFramework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		AB5A91C721EF9DB60000799B /* TestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5A91CC21EF9DB60000799B /* TestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrameworkTests.swift; sourceTree = "<group>"; };
 		AB5A91CE21EF9DB60000799B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB5A91D921EF9EC00000799B /* TestFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFramework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		AB5A91C021EF9DB50000799B /* TestFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AB5A91D821EF9E8B0000799B /* Source */,
 				AB5A91C121EF9DB50000799B /* TestFramework.h */,
 				AB5A91C221EF9DB50000799B /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				AB5A91CE21EF9DB60000799B /* Info.plist */,
 			);
 			path = TestFrameworkTests;
+			sourceTree = "<group>";
+		};
+		AB5A91D821EF9E8B0000799B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB5A91D921EF9EC00000799B /* TestFramework.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					AB5A91BD21EF9DB50000799B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					AB5A91C621EF9DB60000799B = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5A91DA21EF9EC00000799B /* TestFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		AB5A91D321EF9DB60000799B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -358,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jvinovtech.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -365,6 +380,7 @@
 		AB5A91D421EF9DB60000799B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +406,7 @@
 		AB5A91D621EF9DB60000799B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
@@ -407,6 +424,7 @@
 		AB5A91D721EF9DB60000799B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
